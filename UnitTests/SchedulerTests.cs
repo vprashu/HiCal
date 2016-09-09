@@ -9,7 +9,7 @@ namespace HiCal
     
 
     [TestClass]
-    public class UnitTest2
+    public class SchedulerTests
     {
         [TestMethod]
         public void AdjacentSlots()

@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiCalScheduler", "HiCalScheduler\HiCalScheduler.csproj", "{B10EC37F-E402-4CD4-B4E8-EF5C2EEF59F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulerUnitTests", "UnitTests\SchedulerUnitTests.csproj", "{A53A1FDE-568D-4E67-B6A7-094BA8A559BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{A53A1FDE-568D-4E67-B6A7-094BA8A559BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
