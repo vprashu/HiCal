@@ -113,5 +113,31 @@ namespace HiCal
             CollectionAssert.AreEqual(actual, expected, new MeetingSlotComparer());
         }
 
+        [TestMethod]
+        public void LotOfSlots()
+        {
+            int count = 1000000;
+            MeetingSlot[] meetingArray = new MeetingSlot[count];
+            int startIndex = 1;
+            int endIndex = 3;
+            MeetingSlot[] expected = {
+                new MeetingSlot { startTime = startIndex, endTime = count + endIndex - startIndex }
+                };
+            for (int i = 0; i < count; i++)
+            {
+                meetingArray[i] = new MeetingSlot
+                {
+                    startTime = startIndex++,
+                    endTime = endIndex++
+                };
+
+            }
+            var actual = Scheduler.CondenseMeetingTimes(meetingArray);
+
+            
+
+            CollectionAssert.AreEqual(actual, expected, new MeetingSlotComparer());
+        }
+
     }
 }
